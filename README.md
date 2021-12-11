@@ -12,3 +12,9 @@
 ・LED × 1
 
 ・抵抗220Ω × 1
+
+# 回路
+
+![image0 482](https://user-images.githubusercontent.com/92899820/145683722-dd070b78-4581-4406-9772-ffa9b4c18347.jpeg)
+
+![image1 483](https://user-images.githubusercontent.com/92899820/145683737-ea24c765-7951-4364-80f2-1443380609e8.jpeg)
