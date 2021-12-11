@@ -1,4 +1,4 @@
-# robosys_device_drivers
+# robosys_device_driver
 これは2021年にロボットシステム学課題1で作成したデバイスドライバです。
 
 # 動作環境
