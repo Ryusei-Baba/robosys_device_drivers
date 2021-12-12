@@ -36,4 +36,18 @@
 ![image](https://user-images.githubusercontent.com/92899820/145713427-35931895-a114-4aae-8761-1b0c34c36515.png)
 
 # 使用方法
-```【インストール】
+**【インストール】**
+
+以下のコマンドを実行してください。
+
+```
+$ git clone 
+
+$ cd robosys1
+
+$ make
+
+$ sudo insmod myled.ko
+
+$ sudo chmod 666 /dev/myled0
+```
