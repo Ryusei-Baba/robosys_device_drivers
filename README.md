@@ -1,5 +1,6 @@
 # robosys_device_driver
 これは2021年にロボットシステム学課題1で作成したデバイスドライバです。
+
 入力（0or1）によってLEDが点灯したり、消灯したりします。
 
 # 動作環境
@@ -34,13 +35,6 @@
 
 ![image](https://user-images.githubusercontent.com/92899820/145713427-35931895-a114-4aae-8761-1b0c34c36515.png)
 
-$ git clone https://github.com/yuzukiimai/robosys1.git
-
-$ cd robosys1
-
-$ make
-
-$ sudo insmod myled.ko
-
-$ sudo chmod 666 /dev/myled0
-
+# 使用方法
+【インストール】
+以下のコマンドを実行してください。
