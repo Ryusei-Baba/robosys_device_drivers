@@ -41,9 +41,9 @@
 以下のコマンドを実行してください。
 
 ```
-$ git clone 
+$ git clone git@github.com:ryuseiiiii/robosys_device_drivers.git
 
-$ cd robosys1
+$ cd robosys_device_drivers
 
 $ make
 
@@ -51,3 +51,31 @@ $ sudo insmod myled.ko
 
 $ sudo chmod 666 /dev/myled0
 ```
+
+**【アンインストール】**
+
+以下のコマンドを実行してください。
+
+$ sudo rmmod myled
+
+$ make clean
+
+**【実行】**
+
+※ページ下に実行時の動画があります。
+
+インストール後に以下のコマンドを実行してください。
+
+**LEDを点灯させる**
+```
+$ echo 1 > /dev/myled0
+```
+**LEDを消灯させる**
+```
+$ echo 0 > /dev/myled0
+```
+# デモ動画
+https://www.youtube.com/watch?v=8JNyMI1Xf30
+
+# ライセンス
+GNU General Public License v3.0
