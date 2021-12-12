@@ -51,25 +51,28 @@ $ sudo insmod myled.ko
 
 $ sudo chmod 666 /dev/myled0
 ```
-
+***
 **【アンインストール】**
 
 以下のコマンドを実行してください。
 
+```
 $ sudo rmmod myled
 
 $ make clean
-
+```
+***
 **【実行】**
 
 ※ページ下に実行時の動画があります。
 
 インストール後に以下のコマンドを実行してください。
-
+***
 **LEDを点灯させる**
 ```
 $ echo 1 > /dev/myled0
 ```
+***
 **LEDを消灯させる**
 ```
 $ echo 0 > /dev/myled0
