@@ -78,4 +78,4 @@ $ echo 0 > /dev/myled0
 https://www.youtube.com/watch?v=8JNyMI1Xf30
 
 # ライセンス
-[GNU General Public License v3.0](http://google.com)
+[GNU General Public License v3.0](https://github.com/ryuseiiiii/robosys_device_drivers/blob/main/COPYING)
