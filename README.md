@@ -24,8 +24,7 @@
 # 回路
 ・回路図
 
-![image](https://user-images.githubusercontent.com/92899820/146334518-2a3d00d7-e971-440e-bd79-09a335ba3945.png)
-
+![image](https://user-images.githubusercontent.com/92899820/146388302-837a8a73-4aa7-4a5d-9210-5725e3349ba8.png)
 
 ・配線図
 ![image0 495](https://user-images.githubusercontent.com/92899820/146334575-dc47aa5a-8b70-419e-8084-4aea567f836d.jpeg)
