@@ -22,7 +22,6 @@
 ・ジャンパー線（オス-オス）× 1
 ***
 # 回路
-
 ・回路図
 ![image](https://user-images.githubusercontent.com/92899820/146334518-2a3d00d7-e971-440e-bd79-09a335ba3945.png)
 
