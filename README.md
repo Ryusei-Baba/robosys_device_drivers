@@ -1,7 +1,7 @@
 # robosys_device_driver
 これは2021年にロボットシステム学課題1で作成したデバイスドライバです。
 
-入力（0or1）によってLEDが点灯したり、消灯したりします。
+入力によってLEDやブザーの出力が変わります。
 ***
 # 動作環境
 ・Raspberry Pi 4
@@ -13,23 +13,25 @@
 
 ・LED × 1
 
-・抵抗220Ω × 1
+・電磁ブザー × 1
 
 ・ブレッドボード × 1
 
 ・ジャンパー線（オス-メス）× 2
+
+・ジャンパー線（オス-オス）× 1
 ***
 # 回路
 
 ・回路図
+![image](https://user-images.githubusercontent.com/92899820/146334518-2a3d00d7-e971-440e-bd79-09a335ba3945.png)
 
-![image](https://user-images.githubusercontent.com/92899820/145713388-04a6a622-a1f8-48d7-97c9-00587eb5f4f4.png)
 
 ・配線図
+![image0 495](https://user-images.githubusercontent.com/92899820/146334575-dc47aa5a-8b70-419e-8084-4aea567f836d.jpeg)
 
-![image0 482](https://user-images.githubusercontent.com/92899820/145683722-dd070b78-4581-4406-9772-ffa9b4c18347.jpeg)
+![image1 496](https://user-images.githubusercontent.com/92899820/146334599-4c2eeb6e-7c3c-45ce-9be2-1a42fb29c22a.jpeg)
 
-![image1 483](https://user-images.githubusercontent.com/92899820/145683737-ea24c765-7951-4364-80f2-1443380609e8.jpeg)
 
 ・pin情報
 
@@ -68,14 +70,19 @@ $ make clean
 
 インストール後に以下のコマンドを実行してください。
 ***
-**LEDを点灯させる**
+**すべての動作を終了させる**
+```
+$ echo 0 > /dev/myled0
+```
+***
+**LEDの点灯とブザーを鳴らす**
 ```
 $ echo 1 > /dev/myled0
 ```
 ***
-**LEDを消灯させる**
+**LEDの点滅とブザーを鳴らす**
 ```
-$ echo 0 > /dev/myled0
+$ echo 2 > /dev/myled0
 ```
 ***
 # デモ動画
