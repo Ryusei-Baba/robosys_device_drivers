@@ -4,6 +4,7 @@
 #include <linux/device.h>
 #include <linux/uaccess.h>
 #include <linux/io.h>
+#include <linux/delay.h>
 
 MODULE_AUTHOR("Ryusei Baba & Ryuichi Ueda");
 MODULE_DESCRIPTION("driver for LED control");
@@ -17,6 +18,7 @@ static volatile u32 *gpio_base = NULL;
 
 static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_t* pos)
 {
+        int i;
         char c;
         if(copy_from_user(&c,buf, sizeof(char)))
                 return -EFAULT;
@@ -27,6 +29,18 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
                 gpio_base[10] = 1 << 25;
         }else if(c == '1'){
                 gpio_base[7] = 1 << 25;
+        }else if(c == '2'){
+                for(i=0;i<100;i++){
+                        if(i%2 == 0){
+                                gpio_base[7] = 1 << 25;
+                                msleep(50);
+                        }else if(1%2 != 0){
+                                gpio_base[10] = 1 << 25;
+                                msleep(50);
+                        }
+                }
+                gpio_base[10] = 1 << 25;
+
         }
 
         return 1;
@@ -50,7 +64,7 @@ static struct file_operations led_fops = {
         .read = sushi_read
 };
 
-static int __init init_mod(void) //カーネルモジュールの初期化
+static int __init init_mod(void)
 {
         int retval;
         retval = alloc_chrdev_region(&dev, 0, 1, "myled");
@@ -87,7 +101,7 @@ static int __init init_mod(void) //カーネルモジュールの初期化
         return 0;
 }
 
-static void __exit cleanup_mod(void) //後始末
+static void __exit cleanup_mod(void)
 {
         cdev_del(&cdv);
         device_destroy(cls, dev);
@@ -96,5 +110,5 @@ static void __exit cleanup_mod(void) //後始末
         printk(KERN_INFO "%s is unloaded. major:%d\n",__FILE__,MAJOR(dev));
 }
 
-module_init(init_mod);  //マクロで関数を登録
-module_exit(cleanup_mod);  //同上                                                                                       
+module_init(init_mod);
+module_exit(cleanup_mod);
