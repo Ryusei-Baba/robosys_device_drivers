@@ -91,7 +91,7 @@ https://www.youtube.com/watch?v=oNSrJS55dIE
 [GNU General Public License v3.0](https://github.com/ryuseiiiii/robosys_device_drivers/blob/main/COPYING)
 ***
 # 参考
-以下のサイトを参照しました。
+以下のサイトを参考にしました。
 
 [回路記号](https://www.edrawsoft.com/jp/basic-electrical-symbols.html)
 
