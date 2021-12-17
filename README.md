@@ -91,7 +91,7 @@ $ echo 2 > /dev/myled0
 [GNU General Public License v3.0](https://github.com/ryuseiiiii/robosys_device_drivers/blob/main/COPYING)
 ***
 # 参考
-以下のサイトを参考にしました。
+・以下のサイトを参考にしました。
 
 [回路記号](https://www.edrawsoft.com/jp/basic-electrical-symbols.html)
 
@@ -100,3 +100,20 @@ $ echo 2 > /dev/myled0
 [コードブロックの作成と強調表示](https://docs.github.com/ja/github/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
 
 [Markdown記法](https://qiita.com/toshihirooya/items/949f571b85cd7c297cca)
+***
+# 自分のオリジナル
+myled.c内の32行目から44行目は私のオリジナルです。目覚まし時計や小学生が良く持っている防犯ブザーをイメージして作成しました。
+
+        else if(c == '2'){
+                for(i=0;i<100;i++){
+                        if(i%2 == 0){
+                                gpio_base[7] = 1 << 25;
+                                msleep(50);
+                        }else if(1%2 != 0){
+                                gpio_base[10] = 1 << 25;
+                                msleep(50);
+                        }
+                }
+                gpio_base[10] = 1 << 25;
+
+        }
