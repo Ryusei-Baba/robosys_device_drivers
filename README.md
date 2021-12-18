@@ -6,7 +6,7 @@
 # 動作環境
 ・Raspberry Pi 4
 
-・OS : ubuntu 20.04
+・OS : ubuntu 20.04 Server
 ***
 # 使用したもの
 ・Raspberry Pi 4
