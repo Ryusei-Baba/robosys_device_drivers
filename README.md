@@ -30,11 +30,6 @@
 ![image0 495](https://user-images.githubusercontent.com/92899820/146334575-dc47aa5a-8b70-419e-8084-4aea567f836d.jpeg)
 
 ![image1 496](https://user-images.githubusercontent.com/92899820/146334599-4c2eeb6e-7c3c-45ce-9be2-1a42fb29c22a.jpeg)
-
-
-・pin情報
-
-![image](https://user-images.githubusercontent.com/92899820/146388936-bf32b26c-0b5f-456e-af79-e87d5df5237a.png)
 ***
 # 使用方法
 **・インストール**
