@@ -37,7 +37,7 @@
 以下のコマンドを実行してください。
 
 ```
-$ git clone git@github.com:ryuseiiiii/robosys_device_drivers.git
+$ git clone git@github.com:Ryusei-Baba/robosys_device_drivers.git
 
 $ cd robosys_device_drivers
 
